@@ -1,0 +1,245 @@
+@use '../css/mixin/media' as *;
+.footer-title {
+    color: white;
+    h3 {
+        font-size: 17px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+        position: absolute;
+        background-color: var(--alt-color);
+        width: 50px;
+        height: 3px;
+        bottom: -15px;
+        @include media(mobile) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        }
+    }
+}
+.footer {
+    background-color: #081828;
+    .top-footer {
+        color: white;
+        .content {
+            justify-content: space-between;
+            border-bottom: 1px solid #ffffff26;
+            @include media(mobile) {
+                display: block !important;
+            }
+            @include media(small) {
+                align-items: start !important;
+            }
+            .logo {
+                @include media(mobile) {
+                    width: fit-content;
+                    margin: auto;
+                }
+                img {
+                    margin-right: 70px;
+                    @include media(mobile) {
+                        margin-right: 0;
+                        height: fit-content;
+                        margin-bottom: 20px;
+                    }
+                    @include media(small) {
+                        height: fit-content;
+                    }
+                }
+            }
+            .subscribe {
+                justify-content: space-between;
+                flex: 1 1;
+                flex-wrap: wrap;
+                .text {
+                    @include media(mobile) {
+                        text-align: center;
+                        margin: auto;
+                        width: fit-content;
+                    }
+                }
+                h3 {
+                    font-size: 22px;
+                    font-weight: 800;
+                    margin: 0;
+                    @include media(mobile) {
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    color: #c2c2c2;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 5px;
+                    @include media(mobile) {
+                        font-size: 13px;
+                    }
+                }
+                .form {
+                    margin-top: 20px;                
+                    @include media(mobile) {
+                        width: 100%;
+                    }
+                    @include media(large) {
+                        margin-top: 0;                
+                    }
+                    input {
+                        background-color: rgba(255, 255, 255, 0.308);
+                        border: none;
+                        padding: 10px 20px;
+                        width: 300px;
+                        border-radius: 5px; 
+                        margin-right: 10px;               
+                        height: 50px;
+                        font-size: 14px;
+                        &::placeholder {
+                            color: white;
+                        }
+                        @include media(mobile) {
+                            width: 100%;
+                            text-align: center;               
+                        }
+                    }
+                    button {
+                        padding: 12px 25px;
+                        margin-right: 10px;
+                        font-size: 14px;
+                        height: 50px;
+                        @include media(mobile) {
+                            width: 100%;
+                            margin-top: 10px;                
+                        }
+                        &:hover {
+                            background-color: white;
+                            color: black !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .middel-footer {
+        .content {
+            border-bottom: 1px solid #ffffff26;
+            @include media(mobile) {
+                text-align: center;
+                justify-content: center;
+            }
+            .row {
+                width: 100%;
+                .d-app {
+                    li {
+                        width: fit-content;
+                        @include media(mobile) {
+                            margin: auto;
+                        }
+                        a {
+                            background-color: rgba(255, 255, 255, 0.0588235294);
+                            padding: 16px;
+                            margin-top: 15px;
+                            border-radius: 10px;
+                            width: 200px;
+                            display: flex;
+                            gap: 15px;
+                            align-items: center;
+                            transition: .4s ease-in-out;
+                            color: white !important; 
+                            &:hover {
+                                background-color: var(--alt-color);
+                            }
+                            i {
+                                font-size: 30px;
+                            }
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                ul {
+                    padding: 0;
+                    margin-bottom: 30px !important;
+                    &.links {
+                        li {
+                            margin-bottom: 12px;
+                            a {
+                                color: #d6d6d6 !important;
+                                &:hover {
+                                    color: var(--alt-color) !important;
+                                    margin-left: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .get {
+                    ul {
+                        color: #d6d6d6;
+                        font-size: 14px;
+                        li {
+                            margin-bottom: 10px;
+                        }
+                        a {
+                            color: #d6d6d6;
+                        } 
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        .content {
+            @include media(large) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            color: white;
+            img {
+                width: 200px !important;
+            }
+            span {
+                font-size: 14px;
+                margin-right: 10px;
+            }
+            .payment {
+                margin-bottom: 15px;
+                span {
+                    @include media(mobile) {
+                        display: block;
+                    }
+                }
+            }
+            .copy-right {
+                margin-bottom: 10px;
+            }
+            .follow {
+                width: fit-content;
+                margin: 0 !important;
+                @include media(mobile) {
+                    margin: auto !important;
+                }
+                span {
+                    margin-right: 10px;
+                    @include media(mobile) {
+                        display: none;
+                    }
+                }
+                ul {
+                    padding: 0 !important;
+                    li {
+                        margin: 0 !important;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

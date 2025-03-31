@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "category": "Watches",
+        "name": "Xiaomi Mi Band 5",
+        "reviews": 4.0,
+        "price": 199.00,
+        "imgSrc": "/images/products/product-1.jpg"
+    },
+    {
+        "id": 2,
+        "category": "Speaker",
+        "name": "Big Power Sound Speaker",
+        "discount": "-25%",
+        "reviews": 5.0,
+        "price": 275.00,
+        "original_price": 300.00,
+        "imgSrc": "/images/products/product-2.jpg"
+    },
+    {
+        "id": 3,
+        "category": "Camera",
+        "name": "WiFi Security Camera",
+        "reviews": 5.0,
+        "price": 399.00,
+        "status": "New",
+        "imgSrc": "/images/products/product-3.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Phones",
+        "name": "iPhone 6x Plus",
+        "reviews": 5.0,
+        "price": 400.00,
+        "imgSrc": "/images/products/product-4.jpg",
+        "isNew": true
+    },
+    {
+        "id": 5,
+        "category": "Headphones",
+        "name": "Wireless Headphones",
+        "reviews": 5.0,
+        "price": 350.00,
+        "imgSrc": "/images/products/product-5.jpg"
+    },
+    {
+        "id": 6,
+        "category": "Speaker",
+        "name": "Mini Bluetooth Speaker",
+        "reviews": 4.0,
+        "price": 70.00,
+        "imgSrc": "/images/products/product-6.jpg"
+    },
+    {
+        "id": 7,
+        "category": "Headphones",
+        "name": "PX7 Wireless Headphones",
+        "reviews": 4.0,
+        "discount": "-50%",
+        "price": 100.00,
+        "original_price": 200.00,
+        "imgSrc": "/images/products/product-7.jpg"
+    },
+    {
+        "id": 8,
+        "category": "Laptop",
+        "name": "Apple MacBook Air",
+        "reviews": 5.0,
+        "price": 899.00,
+        "imgSrc": "/images/products/product-8.jpg"
+    }
+]
